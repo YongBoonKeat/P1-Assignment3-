@@ -76,31 +76,19 @@ public class Assignment3 {
 			System.out.println("Please enter your choice: ");
 			choice = input.nextInt();
 			if(choice==1) {
-				System.out.println(banglo[0]);
-				System.out.println(banglo[1]);
-				System.out.println(banglo[2]);
-				System.out.println(banglo[3]);
-				
+				Choices(banglo);
 				System.out.println("Enter your Housingloan: ");
 				housingloan=input.nextInt();
 				changers = (housingloan*3/100);
 			}
 		    else if(choice==2) {
-		    	System.out.println(condo[0]);
-		    	System.out.println(condo[1]);
-		    	System.out.println(condo[2]);
-		    	System.out.println(condo[3]);
-		    	
+		    	Choices(condo);
 				System.out.println("Enter your Housingloan: ");
 				housingloan=input.nextInt();
 				changers = (housingloan*2/100);
 		    }
 		    else if(choice==3) {
-		    	System.out.println(hometown[0]);
-		    	System.out.println(hometown[1]);
-		    	System.out.println(hometown[2]);
-		    	System.out.println(hometown[3]);
-				
+		    	Choices(hometown);
 				System.out.println("Enter your Housingloan: ");
 				housingloan=input.nextInt();
 				changers = (housingloan*3/100);
@@ -108,6 +96,13 @@ public class Assignment3 {
 		    else {
 		    	 System.out.print("Invalid number !!!");
 		}
+		}
+		public static void Choices(String []z) {
+			int j=0;
+			while (j<z.length) {
+				System.out.println(z[j]);
+				j++;
+			}
 		}
 		public static void printFinalform() { 
 			System.out.println("");
@@ -143,6 +138,7 @@ public class Assignment3 {
 				System.out.println(banglo[2]);
 				System.out.println(banglo[3]);
 				System.out.println("Total Changers = RM" + changers );
+				System.out.println("Total ammount = RM" + (housingloan+changers) );
 				
 			}
 		    else if(choice==2) {
@@ -151,6 +147,7 @@ public class Assignment3 {
 		    	System.out.println(condo[2]);
 		    	System.out.println(condo[3]);
 				System.out.println("Total Changers = RM "+ changers);
+				System.out.println("Total ammount = RM" + (housingloan+changers) );
 		    }
 		    else {
 		    	System.out.println(hometown[0]);
@@ -158,7 +155,8 @@ public class Assignment3 {
 		    	System.out.println(hometown[2]);
 		    	System.out.println(hometown[3]);
 				System.out.println("Total Changers = RM"+changers);
-				}
+				System.out.println("Total ammount = RM" + (housingloan+changers) );
+		    }
 		  }
 		
 	}
