@@ -64,19 +64,19 @@ public class Assignment3 {
 		public static void printToH() {
 			Scanner input = new Scanner (System.in);
 			
-			String banglo[] = {"Banglo","Maximum housing loan = RM500000","Payment limited: 10years ","Changers: 3% "};
+			String villa[] = {"Villa","Maximum housing loan = RM500000","Payment limited: 10years ","Changers: 3% "};
 			String condo[] = {"Condo","Maximum housing loan = RM200000","Payment limited: 3years ","Changers: 2% "};
-			String hometown[] = {"Hometown","Maximum housing loan = RM400000","Payment limited: 5years ","Changers: 3% "};
+			String townHome[] = {"TownHome","Maximum housing loan = RM400000","Payment limited: 5years ","Changers: 3% "};
 			System.out.println("===================");
 			System.out.println("== Type of house ==");
 			System.out.println("===================");
-			System.out.println("1: Banglo ");
+			System.out.println("1： Villa ");
 			System.out.println("2: Condo ");
-			System.out.println("3: Hometown ");
+			System.out.println("3: TownHome ");
 			System.out.println("Please enter your choice: ");
 			choice = input.nextInt();
 			if(choice==1) {
-				Choices(banglo);
+				Choices(villa);
 				System.out.println("Enter your Housingloan: ");
 				housingloan=input.nextInt();
 				changers = (housingloan*3/100);
@@ -88,7 +88,7 @@ public class Assignment3 {
 				changers = (housingloan*2/100);
 		    }
 		    else if(choice==3) {
-		    	Choices(hometown);
+		    	Choices(townHome);
 				System.out.println("Enter your Housingloan: ");
 				housingloan=input.nextInt();
 				changers = (housingloan*3/100);
@@ -129,14 +129,14 @@ public class Assignment3 {
 			System.out.println("Housingloan: RM" + housingloan);
 			System.out.println("");
 			
-			String banglo[] = {"Banglo","Maximum housing loan = RM500000","Payment limited: 10 years ","Changers: 3% "};
+			String villa[] = {"Villa","Maximum housing loan = RM500000","Payment limited: 10 years ","Changers: 3% "};
 			String condo[] = {"Condo","Maximum housing loan = RM200000","Payment limited: 3 years ","Changers: 2% "};
-			String hometown[] = {"Hometown","Maximum housing loan = RM400000","Payment limited: 5 years ","Changers: 3% "};
+			String townhome[] = {"TownHome","Maximum housing loan = RM400000","Payment limited: 5 years ","Changers: 3% "};
 			if(choice==1) {
-				System.out.println(banglo[0]);
-				System.out.println(banglo[1]);
-				System.out.println(banglo[2]);
-				System.out.println(banglo[3]);
+				System.out.println(villa[0]);
+				System.out.println(villa[1]);
+				System.out.println(villa[2]);
+				System.out.println(villa[3]);
 				System.out.println("Total Changers = RM" + changers );
 				System.out.println("Total ammount = RM" + (housingloan+changers) );
 				
@@ -150,10 +150,10 @@ public class Assignment3 {
 				System.out.println("Total ammount = RM" + (housingloan+changers) );
 		    }
 		    else {
-		    	System.out.println(hometown[0]);
-		    	System.out.println(hometown[1]);
-		    	System.out.println(hometown[2]);
-		    	System.out.println(hometown[3]);
+		    	System.out.println(townhome[0]);
+		    	System.out.println(townhome[1]);
+		    	System.out.println(townhome[2]);
+		    	System.out.println(townhome[3]);
 				System.out.println("Total Changers = RM"+changers);
 				System.out.println("Total ammount = RM" + (housingloan+changers) );
 		    }
